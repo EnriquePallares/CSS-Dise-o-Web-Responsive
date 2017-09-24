@@ -1,0 +1,148 @@
+/*Inicio Diseño General*/
+html, body{
+    color: white;
+    background-color: black;
+    font-family: 'Dancing Script';
+    text-align: center;
+}
+.contenido{
+    width: 900px;
+    margin: auto;
+}
+/*Fin Diseño General*/
+
+/*Inicio Header*/
+header{
+    background-color: #5b7989;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    flex-direction: row;
+    animation: slideIn 3s;
+}
+div.titulo{
+    text-shadow: 2px 2px #02010a;
+    margin: auto;
+}
+header nav{
+    margin: auto;
+}
+header nav a, a:visited{
+    color: white;
+}
+.visitado{
+    text-decoration: none;
+}
+/*Fin Header*/
+
+/*Inicio Central*/
+section.central{
+    background-color: #82c3a6;
+    text-align: center;
+    width: 100%;
+}
+.imagenCentral{
+    width: 100%;
+    margin: auto;
+}
+.imagenCentral img{
+    width: 85%;
+    border-radius: 10px;
+    margin-top: 0.5%;
+    box-shadow: 2px 2px 2px black;
+}
+/*Fin Central*/
+
+/*Inicio Secundarias*/
+section.secundarias{
+    background-color: #d5c75f;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    border: 1px;
+    text-align: center;
+    color: black;
+}
+.imagenDer, .imagenIzq{
+    width: 100%;
+    margin-top: 1.5%;
+}
+.imagenDer img, .imagenIzq img{
+    width: 80%;
+    height: 85%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px black;
+}
+.imagenDer img:hover{
+    transform: translate(20px,-5px);
+    box-shadow: 2px 2px 2px #82c3a6;
+}
+.imagenIzq img:hover{
+    transform: rotate(10deg);
+    box-shadow: 2px 2px 2px #82c3a6;
+}
+/*Fin Secundarias*/
+
+/*Inicio Footer*/
+footer{
+    background-color: #C6d5c5;
+    display: flex;
+    flex-direction: row;
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+}
+footer img{
+    margin: auto;
+}
+div[class*="columna"]{
+    display: flex;
+    flex-direction: column;
+    padding-left: 8%;
+    color: black;
+    margin-bottom: 2%;
+}
+/*Fin Footer*/
+
+/*Inicio MediaQuerys*/
+@media (max-width: 600px) {
+    .contenido{
+        width: 100%;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    section.secundarias{
+        display: flex;
+        flex-direction: column;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    div[class*="columna"]{
+        margin: auto;
+        padding-left: 0;
+    }
+}
+/*Fin MediaQuerys*/
+
+/*Inicio Animación*/
+@keyframes slideIn {
+    0%{
+        margin-top:150%;
+    }
+    60%{
+        margin-top:-5%;
+    }
+    100%{
+        margin-top:0%;
+    }
+}
+/*Fin Animación*/
+
+
+
+
+
+
+
